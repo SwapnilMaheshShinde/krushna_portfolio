@@ -70,7 +70,7 @@
                         Exploring the intersection of molecular biology and practical research with hands-on expertise in 
                         plant tissue culture, DNA analysis, and quality control procedures.
                     </p>
-                    <div class="hero-buttons">
+                   <div class="hero-buttons">
                         <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
                             <span>Get in Touch</span>
                         </button>
@@ -78,6 +78,18 @@
                             <i class="fas fa-download"></i> Resume
                         </button>
                     </div>
+
+                    <script>
+                    document.getElementById('resumeBtn').addEventListener('click', function() {
+                        // Create a temporary link element
+                        const link = document.createElement('a');
+                        link.href = 'res.pdf';  // Make sure this path is correct
+                        link.download = 'res.pdf';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    });
+                    </script>
                     <div class="social-links">
                         <a href="mailto:balkrushna.kashid11@gmail.com" class="social-icon" title="Email">
                             <i class="fas fa-envelope"></i>
