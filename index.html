@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balkrishna Kashid - Biotechnology & Research Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-container">
+            <div class="animated-logo">BK</div>
+            <p class="loader-text">Loading Portfolio</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BK</span>
+                <span class="logo-dot"></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Background Elements -->
+    <div class="background-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="particle-container" id="particleContainer"></div>
+        <div class="grid-background"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor-blink">|</span>
+                    </h1>
+                    <p class="hero-subtitle">Biotechnology Professional | Research Enthusiast | Laboratory Innovator</p>
+                    <p class="hero-description">
+                        Exploring the intersection of molecular biology and practical research with hands-on expertise in 
+                        plant tissue culture, DNA analysis, and quality control procedures.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            <span>Get in Touch</span>
+                        </button>
+                        <button class="btn btn-secondary" id="resumeBtn">
+                            <i class="fas fa-download"></i> Resume
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:balkrushna.kashid11@gmail.com" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917620023792" class="social-icon" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" class="social-icon" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <img src="profile.jpeg" alt="Balkrishna Kashid" id="profileImage" class="profile-img">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image-card">
+                        <div class="about-image-container">
+                            <img src="profile.jpeg" alt="Balkrishna Kashid" id="aboutProfileImage" class="about-profile-img">
+                            <div class="about-image-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <p>
+                                I'm Balkrishna Vishwas Kashid, a Biotechnology graduate passionate about molecular research and 
+                                laboratory innovation. With practical experience in cutting-edge techniques including plant tissue culture, 
+                                DNA fingerprinting, and molecular biology analysis, I bring a scientific approach to solving real-world problems.
+                            </p>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <h3 class="stat-number">7.9</h3>
+                                <p class="stat-label">CGPA</p>
+                                <p class="stat-desc">B.Tech Biotechnology</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">4+</h3>
+                                <p class="stat-label">Months</p>
+                                <p class="stat-desc">Hands-on Training</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">6+</h3>
+                                <p class="stat-label">Techniques</p>
+                                <p class="stat-desc">Laboratory Expertise</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">3</h3>
+                                <p class="stat-label">Languages</p>
+                                <p class="stat-desc">English, Hindi, Marathi</p>
+                            </div>
+                        </div>
+
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Solapur, Maharashtra, India</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91-7620023792</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>balkrushna.kashid11@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills & Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Laboratory Techniques -->
+                    <div class="skill-category">
+                        <h3>Laboratory Techniques</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Plant Tissue Culture</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PCR & DNA Analysis</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Gel Electrophoresis</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">ELISA & Microscopy</span>
+                                    <span class="skill-level">Proficient</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">DNA Fingerprinting</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Aseptic Techniques</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 94%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research & Analysis -->
+                    <div class="skill-category">
+                        <h3>Research & Analysis</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Bioanalytical Research</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Quality Control</span>
+                                    <span class="skill-level">Proficient</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 86%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Data Recording & Documentation</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Media Preparation</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 89%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Laboratory Equipment Handling</span>
+                                    <span class="skill-level">Proficient</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 87%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MS Office</span>
+                                    <span class="skill-level">Proficient</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 84%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- B.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="card-header">
+                                    <h3>B.Tech Biotechnology</h3>
+                                    <span class="degree-badge">Undergraduate</span>
+                                </div>
+                                <p class="institution">
+                                    <i class="fas fa-university"></i> College of Agricultural Biotechnology, Saralgaon
+                                </p>
+                                <p class="university">
+                                    <strong>University:</strong> DBSKKV, Dapoli
+                                </p>
+                                <div class="education-stats">
+                                    <div class="stat">
+                                        <span class="stat-icon">📊</span>
+                                        <div>
+                                            <p class="stat-title">CGPA</p>
+                                            <p class="stat-value">7.9/10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="card-header">
+                                    <h3>HSC (12th Grade)</h3>
+                                    <span class="degree-badge">Secondary</span>
+                                </div>
+                                <p class="institution">
+                                    <i class="fas fa-school"></i> Junior College, Khamgaon
+                                </p>
+                                <p class="board">
+                                    <strong>Board:</strong> State Board
+                                </p>
+                                <div class="education-stats">
+                                    <div class="stat">
+                                        <span class="stat-icon">📈</span>
+                                        <div>
+                                            <p class="stat-title">Percentage</p>
+                                            <p class="stat-value">82.17%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="card-header">
+                                    <h3>SSC (10th Grade)</h3>
+                                    <span class="degree-badge">Primary</span>
+                                </div>
+                                <p class="institution">
+                                    <i class="fas fa-school"></i> Sojar English School, Barshi
+                                </p>
+                                <p class="board">
+                                    <strong>Board:</strong> State Board
+                                </p>
+                                <div class="education-stats">
+                                    <div class="stat">
+                                        <span class="stat-icon">⭐</span>
+                                        <div>
+                                            <p class="stat-title">Percentage</p>
+                                            <p class="stat-value">89.40%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Training & Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Plant Tissue Culture Training -->
+                    <div class="experience-item">
+                        <div class="exp-marker"></div>
+                        <div class="exp-content">
+                            <div class="exp-card">
+                                <div class="exp-header">
+                                    <h3>Plant Tissue Culture Training</h3>
+                                    <span class="exp-duration">4 Months</span>
+                                </div>
+                                <p class="exp-organization">
+                                    <i class="fas fa-flask"></i> MPKV, Rahuri
+                                </p>
+                                <div class="exp-description">
+                                    <ul>
+                                        <li>Completed comprehensive hands-on training in plant tissue culture techniques and laboratory procedures</li>
+                                        <li>Worked on media preparation, culture maintenance, and aseptic laboratory practices</li>
+                                        <li>Maintained detailed laboratory observations and followed quality control procedures</li>
+                                    </ul>
+                                </div>
+                                <div class="exp-tags">
+                                    <span class="tag">Plant Tissue Culture</span>
+                                    <span class="tag">Lab Techniques</span>
+                                    <span class="tag">Quality Control</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DNA Fingerprinting Project -->
+                    <div class="experience-item">
+                        <div class="exp-marker"></div>
+                        <div class="exp-content">
+                            <div class="exp-card">
+                                <div class="exp-header">
+                                    <h3>DNA Fingerprinting Project Work</h3>
+                                    <span class="exp-duration">Project Duration</span>
+                                </div>
+                                <p class="exp-organization">
+                                    <i class="fas fa-microscope"></i> Saralgaon, Thane
+                                </p>
+                                <div class="exp-description">
+                                    <ul>
+                                        <li>Worked on various DNA fingerprinting techniques for molecular analysis</li>
+                                        <li>Performed PCR and gel electrophoresis experiments for sample analysis</li>
+                                        <li>Assisted in laboratory documentation, data recording, and experimental observations</li>
+                                    </ul>
+                                </div>
+                                <div class="exp-tags">
+                                    <span class="tag">DNA Fingerprinting</span>
+                                    <span class="tag">PCR</span>
+                                    <span class="tag">Gel Electrophoresis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Academic Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- DNA Fingerprinting Project -->
+                    <div class="project-card" data-tilt>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <h3>DNA Fingerprinting Techniques</h3>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive study of DNA isolation and amplification techniques for molecular analysis, including 
+                            PCR analysis and gel electrophoresis experiments.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>DNA Isolation & Amplification</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>PCR Analysis</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Gel Electrophoresis</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Research Documentation</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Molecular Biology</span>
+                            <span class="tech-tag">Genetics</span>
+                            <span class="tech-tag">Lab Analysis</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="project-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strengths Section -->
+        <section id="strengths" class="strengths">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Strengths & Qualities</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="strengths-grid">
+                    <div class="strength-card">
+                        <div class="strength-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Positive Attitude</h3>
+                        <p>Approach challenges with optimism and maintain a constructive mindset in all endeavors</p>
+                    </div>
+                    <div class="strength-card">
+                        <div class="strength-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Work effectively with diverse teams, communicate clearly, and contribute to collective goals</p>
+                    </div>
+                    <div class="strength-card">
+                        <div class="strength-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Leadership Skills</h3>
+                        <p>Guide and inspire team members while making informed decisions under pressure</p>
+                    </div>
+                    <div class="strength-card">
+                        <div class="strength-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Quick Learner</h3>
+                        <p>Rapidly acquire new skills and knowledge, adapting to evolving research methodologies</p>
+                    </div>
+                    <div class="strength-card">
+                        <div class="strength-icon">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                        <h3>Attention to Detail</h3>
+                        <p>Maintain precision in laboratory work, ensuring accuracy in data recording and documentation</p>
+                    </div>
+                    <div class="strength-card">
+                        <div class="strength-icon">
+                            <i class="fas fa-flask-vial"></i>
+                        </div>
+                        <h3>Laboratory Discipline</h3>
+                        <p>Follow protocols meticulously, maintain sterile conditions, and ensure compliance with safety standards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Let's Connect</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>
+                            I'm always interested in hearing about new opportunities, research collaborations, 
+                            and exciting projects in biotechnology and molecular research.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:balkrushna.kashid11@gmail.com">balkrushna.kashid11@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+917620023792">+91-7620023792</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Solapur, Maharashtra, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Languages</h4>
+                                    <p>English, Hindi, Marathi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <a href="mailto:balkrushna.kashid11@gmail.com" class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+917620023792" class="social-link" title="Phone">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Balkrishna Kashid</h3>
+                <p>Biotechnology Professional | Research Enthusiast</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow</h4>
+                <div class="footer-socials">
+                    <a href="mailto:balkrushna.kashid11@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+917620023792" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Balkrishna Kashid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
